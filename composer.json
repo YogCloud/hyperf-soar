@@ -20,7 +20,7 @@
   "license": "Apache-2.0",
   "autoload": {
     "psr-4": {
-      "Yogcloud\\HyperfSoar\\": "src/"
+      "YogCloud\\HyperfSoar\\": "src/"
     }
   },
   "authors": [
@@ -31,5 +31,10 @@
   ],
   "config": {
     "sort-packages": true
+  },
+  "extra": {
+    "hyperf": {
+      "config": "YogCloud\\HyperfSoar\\ConfigProvider"
+    }
   }
 }
