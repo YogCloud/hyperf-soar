@@ -26,7 +26,7 @@ class ConfigProvider
                 [
                     'id' => 'config',
                     'description' => 'The config for soar.',
-                    'source' => __DIR__ . '/../publish/soar.php',
+                    'source' => __DIR__ . '/publish/soar.php',
                     'destination' => BASE_PATH . '/config/autoload/soar.php',
                 ],
             ],
