@@ -1,0 +1,35 @@
+{
+  "name": "yogcloud/hyperf-soar",
+  "description": "Soar optimization sql tips based on hyperf implementation",
+  "type": "library",
+  "require": {
+    "php": ">=7.4",
+    "ext-swoole": ">=4.6",
+    "guanguans/soar-php": "^2.5",
+    "hyperf/config": "~2.2.0",
+    "hyperf/database": "~2.2.0",
+    "hyperf/di": "~2.2.0",
+    "hyperf/event": "~2.2.0",
+    "hyperf/http-message": "~2.2.0",
+    "hyperf/utils": "~2.2.0"
+  },
+  "require-dev": {
+    "swoole/ide-helper": "dev-master",
+    "hyperf/ide-helper": "~2.2.0"
+  },
+  "license": "Apache-2.0",
+  "autoload": {
+    "psr-4": {
+      "Yogcloud\\HyperfSoar\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "cexll",
+      "email": "evanxian9@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  }
+}
