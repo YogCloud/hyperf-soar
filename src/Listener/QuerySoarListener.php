@@ -37,12 +37,18 @@ class QuerySoarListener implements ListenerInterface
      */
     protected $soarIsEnabled;
 
+    /**
+     * @var int
+     */
+    protected $eventTime;
+
     public function __construct(ContainerInterface $container)
     {
         $this->logger = $container->get(LoggerFactory::class)->get('soar');
         $this->console = $container->get(StdoutLoggerInterface::class);
         $this->soar = $container->get(Soar::class);
         $this->soarIsEnabled = $container->get(ConfigInterface::class)->get('soar.enabled');
+        $this->eventTime = $container->get(ConfigInterface::class)->get('soar.eventTime');
     }
 
     public function listen(): array
@@ -64,8 +70,10 @@ class QuerySoarListener implements ListenerInterface
                     $sql = Str::replaceFirst('?', "'{$value}'", $sql);
                 }
             }
-            $soar = $this->soar->jsonScore($sql);
-            $this->logger->info(sprintf("%s", $soar));
+            if ($event->time > $this->eventTime) {
+                $soar = $this->soar->jsonScore($sql);
+                $this->logger->info(sprintf("%s", $soar));
+            }
         }
     }
 }

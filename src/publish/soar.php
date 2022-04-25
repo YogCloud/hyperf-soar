@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     'enabled' => env('SOAR_ENABLED', env('APP_ENV') === 'local'),
+    'eventTime' => env('EVENT_TIME', 1), // sql耗时多少毫秒记录
     '-soar-path' => env('SOAR_PATH', ''), // soar 二进制文件的绝对路径
     '-test-dsn' => [
         'host' => env('SOAR_TEST_DSN_HOST', env('DB_HOST', '127.0.0.1')),
