@@ -6,12 +6,14 @@ use Hyperf\Contract\StdoutLoggerInterface;
 use Hyperf\Database\Events\QueryExecuted;
 use Hyperf\Event\Contract\ListenerInterface;
 use Hyperf\Logger\LoggerFactory;
+use Hyperf\Event\Annotation\Listener;
 use Hyperf\Utils\Arr;
 use Hyperf\Utils\Str;
 use Psr\Container\ContainerInterface;
 use Psr\Log\LoggerInterface;
 use YogCloud\HyperfSoar\Soar;
 
+#[Listener]
 class DbQueryExecutedListener implements ListenerInterface
 {
     /**
