@@ -1,7 +1,7 @@
 # Hyperf-soar
 > soar 是一个小米公司开源的 soar 开发的 SQL 优化器、重写器(辅助 SQL 调优)。
 
-[![Latest Stable Version](http://poser.pugx.org/yogcloud/hyperf-soar/v)](https://packagist.org/packages/yogcloud/hyperf-soar) [![Total Downloads](http://poser.pugx.org/yogcloud/hyperf-soar/downloads)](https://packagist.org/packages/yogcloud/hyperf-soar) [![Latest Unstable Version](http://poser.pugx.org/yogcloud/hyperf-soar/v/unstable)](https://packagist.org/packages/yogcloud/hyperf-soar) [![License](http://poser.pugx.org/yogcloud/hyperf-soar/license)](https://packagist.org/packages/yogcloud/hyperf-soar)
+[![Latest Stable Version](http://poser.pugx.org/yogcloud/hyperf-soar/v)](https://packagist.org/packages/yogcloud/hyperf-soar) [![Total Downloads](http://poser.pugx.org/yogcloud/hyperf-soar/downloads)](https://packagist.org/packages/yogcloud/hyperf-soar) [![Latest Unstable Version](http://poser.pugx.org/yogcloud/hyperf-soar/v/unstable)](https://packagist.org/packages/yogcloud/hyperf-soar) [![License](http://poser.pugx.org/yogcloud/hyperf-soar/license)](https://packagist.org/packages/yogcloud/hyperf-soar) [![PHP Version Require](http://poser.pugx.org/yogcloud/hyperf-soar/require/php)](https://packagist.org/packages/yogcloud/hyperf-soar)
 
 # 环境要求
 - Hyperf 2.2
